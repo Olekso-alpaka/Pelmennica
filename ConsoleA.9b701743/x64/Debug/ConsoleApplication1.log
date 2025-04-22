@@ -1,6 +1,2 @@
 ﻿  ConsoleApplication1.cpp
-C:\Users\AlpakaTitikaka\Source\Repos\Pelmennica\ConsoleApplication1.cpp(10,1): error C4700: использована неинициализированная локальная переменная "t"
-C:\Users\AlpakaTitikaka\Source\Repos\Pelmennica\ConsoleApplication1.cpp(16,1): error C4700: использована неинициализированная локальная переменная "M"
-C:\Users\AlpakaTitikaka\Source\Repos\Pelmennica\ConsoleApplication1.cpp(22,1): error C4700: использована неинициализированная локальная переменная "qp"
-C:\Users\AlpakaTitikaka\Source\Repos\Pelmennica\ConsoleApplication1.cpp(28,1): error C4700: использована неинициализированная локальная переменная "qf"
-C:\Users\AlpakaTitikaka\Source\Repos\Pelmennica\ConsoleApplication1.cpp(34,1): error C4700: использована неинициализированная локальная переменная "qt"
+  ConsoleApplication1.vcxproj -> C:\Users\AlpakaTitikaka\Source\Repos\Pelmennica\x64\Debug\ConsoleApplication1.exe

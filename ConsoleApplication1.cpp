@@ -4,6 +4,7 @@ using namespace std;
 
 int main()
 {
+    setlocale(0, "");
     int t, M, qp, qf, qt;
     double af;
     cout << "Введите продолжительность смены: ";
@@ -45,9 +46,9 @@ int main()
         double Qp = (double)M / (2.0 * t);
         double np = (double)Qp / qp;
         double nf, Qf;
-        Qf = af * Qp;
+        Qf = (af/100) * Qp;
         nf =(double) Qf / qf;
-        double Qt = (1 - af) * Qp;
+        double Qt = (1 - af/100) * Qp;
         double nt = (double)Qt / qt;
         cout << "Количество машин для пельмений = " << ceil(np) << endl
             << "Количество машин для фарша = " << ceil(nf) << endl
