@@ -37,13 +37,20 @@ int main()
         return 0;
     }
     cout << "Введите процент содержания фарша: ";
-    if (!cin >> af && af <= 0)
+    if (!(cin >> af) && af <= 0)
     {
         cout << "ERROR";
         return 0;
     }
         double Qp = (double)M / (2.0 * t);
         double np = (double)Qp / qp;
-
+        double nf, Qf;
+        Qf = af * Qp;
+        nf = Qf / qf;
+        double Qt = (1 - af) * Qp;
+        double nt = (double)Qt / qt;
+        cout << "Количество машин для пельмений = " << ceil(np) << endl
+            << "Количество машин для фарша = " << ceil(nf) << endl
+            << "Количество машин для теста = " << ceil(nt);
 }
 
