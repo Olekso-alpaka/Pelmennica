@@ -7,31 +7,31 @@ int main()
     int t, M, qp, qf, qt;
     double af;
     cout << "Введите продолжительность смены: ";
-    if (!cin >> t && t <= 0)
+    if (!(cin >> t) && t <= 0)
     {
         cout << "ERROR";
         return 0;
     }
     cout << "Введите кол-во пельменей изготовленных за смену: ";
-    if (!cin >> M && M <= 0)
+    if (!(cin >> M) && M <= 0)
     {
         cout << "ERROR";
         return 0;
     }
     cout << "Введите сколько машина производит пельменей за рабочий период: ";
-    if (!cin >> qp && qp <= 0)
+    if (!(cin >> qp) && qp <= 0)
     {
         cout << "ERROR";
         return 0;
     }
     cout << "Введите сколько машина производит фарша за рабочий период: ";
-    if (!cin >> qf && qf <= 0)
+    if (!(cin >> qf) && qf <= 0)
     {
         cout << "ERROR";
         return 0;
     }
     cout << "Введите сколько машина производит теста за рабочий период: ";
-    if (!cin >> qt && qt <= 0)
+    if (!(cin >> qt) && qt <= 0)
     {
         cout << "ERROR";
         return 0;
@@ -46,7 +46,7 @@ int main()
         double np = (double)Qp / qp;
         double nf, Qf;
         Qf = af * Qp;
-        nf = Qf / qf;
+        nf =(double) Qf / qf;
         double Qt = (1 - af) * Qp;
         double nt = (double)Qt / qt;
         cout << "Количество машин для пельмений = " << ceil(np) << endl
