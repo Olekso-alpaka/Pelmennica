@@ -42,4 +42,8 @@ int main()
         cout << "ERROR";
         return 0;
     }
+        double Qp = (double)M / (2.0 * t);
+        double np = (double)Qp / qp;
+
 }
+
